@@ -1,4 +1,4 @@
-import {TOGGLE_FAVORITE, ADD_FAVORITE, REMOVE_FAVORITE} from '../actions/movieActions';
+import {TOGGLE_FAVORITE, ADD_FAVORITE, REMOVE_FAVORITE} from '../actions/favoriteActions';
 
 const initialState = {
     favorite: [],
