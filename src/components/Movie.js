@@ -1,5 +1,13 @@
 import React from 'react';
 import { useParams, useHistory } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+const mapStateToProps = (state) => {
+    return ({
+        movies: state.movie.movies,
+        displayFavorites: state.favorite.displayFavorites
+    });
+}
 
 const Movie = (props) => {
     const { id } = useParams();
