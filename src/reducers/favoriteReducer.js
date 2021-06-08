@@ -24,6 +24,8 @@ const favoriteReducer = (state= initialState, action) => {
                     ...state,
                     favorites: state.favorites.filter(item => (action.payload) !== item.id)
                 };
+            default: 
+            return state;
     }
 }
 
